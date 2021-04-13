@@ -21,6 +21,12 @@ fun main() {
     println("Média salarial: ${salarios.average()}")
 
     println("==========================")
+    //Refatorando código anterior, que está depreciado
+    println("Maior salário: ${salarios.maxOrNull()}")
+    println("Menor salário: ${salarios.minOrNull()}")
+    println("Média salarial: ${salarios.average()}")
+
+    println("==========================")
 
     val salariosMaiorQue2500 = salarios.filter { it > 2500.0 }
     salariosMaiorQue2500.forEach { println(it)}
