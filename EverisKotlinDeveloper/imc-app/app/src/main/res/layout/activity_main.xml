@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cor_fundo_tela"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:text="IMC"
+        android:textColor="@color/cor_texto_titulo"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Massa corporal em Kg"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="@color/cor_fundo_hint"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
+        tools:layout_editor_absoluteX="50dp" />
+
+    <EditText
+        android:id="@+id/edtAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Altura em metros"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="@color/cor_fundo_hint"
+        app:layout_constraintTop_toBottomOf="@+id/edtPeso" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/cor_fundo_botao"
+        android:text="@string/calcular"
+        android:textColor="@color/cor_texto_botao"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        android:layout_marginHorizontal="25dp"
+        android:padding="15dp"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_percent="0.85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
