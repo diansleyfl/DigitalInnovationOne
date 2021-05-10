@@ -33,24 +33,24 @@
 
 package one.digitalinnovation.solucionandoproblemasemkotlin
 
-fun main(args: Array<String>) {
-    val casos = readLine()!!.toInt()
-
-        for ( i in 0..casos) {
-            val numero = readLine()!!.toInt()
-            val prime = isPrime(numero)
-
-            if(prime) {print("Prime")} else print("Not Prime")
-        }
-
+fun main() {
+    val casos = readLine()?.toInt() ?: 0
+    for (i in 1..casos) {
+        val x = readLine()?.toDouble() ?: 0.0
+        println(isPrime(x))
+    }
 }
 
-fun isPrime(num: Int): Boolean {
-
-    if (num < 2) return false
-
-    for(j in 2..num){
-        if (num % j == 0) return true
-        return true
+fun isPrime(numero: Double): String{
+    if( numero == 1.0 ) {
+        return "Not Prime"
     }
+    var i = 2.0
+    while (i * i <= numero) {
+        if (numero % i == 0.0) {
+            return "Not Prime"
+        }
+        i++
+    }
+    return "Prime"
 }
