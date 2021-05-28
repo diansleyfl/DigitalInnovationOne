@@ -1,0 +1,235 @@
+/*
+----------------------------------------------------------
+------------------- ESTRUTURA BASE -----------------------
+----------------------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** ESTILOS GERAIS
+**** BODY
+**** HEADER
+**** PÁGINA INICIAL
+**** FOOTER
+**** EXTRAS
+**** @MEDIA
+
+
+----------------------------------------------------------
+------------------DECLARAÇÃO VARIÁVEIS--------------------
+----------------------------------------------------------
+ */
+
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+    --texto-nav: #AAA;
+    --texto-nav-hover: #fff;
+    --texto: #fff;
+    --background-botao: rgba(0,0,0,.50);
+}
+
+
+/* 
+----------------------------------------------------------
+---------------------ESTILOS GERAIS-----------------------
+---------------------------------------------------------- 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* 
+----------------------------------------------------------
+--------------------------BODY----------------------------
+---------------------------------------------------------- 
+*/
+
+body {
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: var(--texto);
+}
+
+
+/* 
+----------------------------------------------------------
+-------------------------HEADER---------------------------
+---------------------------------------------------------- 
+*/
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--texto-nav);
+    margin-right: 15px;
+}
+
+header nav a:hover {
+    color: var(--texto-nav-hover);
+}
+
+
+/* 
+----------------------------------------------------------
+---------------------PÁGINA INICIAL-----------------------
+---------------------------------------------------------- 
+*/
+
+.filme-principal {
+    font-size: 20px;
+    background-image: linear-gradient(
+        rgba(0,0,0,.50), 
+        rgba(0,0,0.50)100%), 
+        url('/img/the-walking-dead.jpg');
+    
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.botao {
+    background-color: var(--background-botao);
+    border: none;
+    border-radius: 3%;
+    color: var(--texto);
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel {
+    margin-top: 10px;
+}
+
+
+/* 
+----------------------------------------------------------
+-------------------------FOOTER---------------------------
+---------------------------------------------------------- 
+*/
+
+/* 
+----------------------------------------------------------
+-------------------------EXTRAS---------------------------
+---------------------------------------------------------- 
+*/
+
+/* 
+----------------------------------------------------------
+-------------------------@MEDIA---------------------------
+---------------------------------------------------------- 
+*/
+
+@media screen and (max-width: 500px) {
+
+    .filme-principal {
+        align-items: center;
+    }
+
+    .filme-principal .container {
+        width: 90%;
+    }
+
+    .container {
+        margin-left: 0px;
+    }
+    
+    .botao {
+        margin-top: 5px;
+        min-width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }  
+    
+    .botao {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        min-width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .descricao {
+        widht: 50%;
+    }
+
+    .botao {
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+
+
+
+
