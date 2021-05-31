@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color:rgb(232, 232, 232);
+}
+
+.container-principal {
+    width: 70%;
+    margin: 40px auto;
+}
+
+.navbar {
+    background-color: #000000;
+}
+
+.navbar-light .navbar-nav {
+    margin-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:visited {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(150, 150, 150);
+}
+
+#quemsomos {
+    background-color: #919194;
+    color: white;
+}
+
+#parceiros {
+    background-color: #3e2d9e;
+    color: white;
+}
+
+.margin {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+h3 {
+    margin: 40px;
+}
+
+#servicos {
+    background-color: #974b71;
+    color: white;
+}
+
+.bg-footer {
+    background-color: black;
+    color: white;
+}
