@@ -14,7 +14,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-image: url(/snake.jpg);
+    background-image: url(/assets/img/snake.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: black;
