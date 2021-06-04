@@ -1,4 +1,4 @@
-# DigitalInnovationOne
+# Digital Innovation One
 Projetos e desafios propostos pelos cursos realizados na Digital Innovation One
 
 [![logo - Digital Innovation One](https://i.imgur.com/DPM4YCj.png "logo - Digital Innovation One")](https://i.imgur.com/DPM4YCj.png "logo - Digital Innovation One")
